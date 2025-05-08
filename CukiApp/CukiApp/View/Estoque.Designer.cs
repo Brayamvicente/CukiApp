@@ -39,6 +39,7 @@
             entMerc.TabIndex = 0;
             entMerc.Text = "Entrada Mercadoria";
             entMerc.UseVisualStyleBackColor = true;
+            entMerc.Click += entMerc_Click;
             // 
             // Estoque
             // 

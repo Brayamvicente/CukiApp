@@ -1,6 +1,6 @@
 ﻿namespace CukiApp.View
 {
-    partial class TelaAdicionarReceita
+    partial class Receita
     {
         /// <summary>
         /// Required designer variable.
@@ -30,32 +30,43 @@
         {
             textBox1 = new TextBox();
             label1 = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(200, 12);
+            textBox1.Location = new Point(101, 12);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(494, 23);
+            textBox1.Size = new Size(532, 23);
             textBox1.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(50, 20);
+            label1.Location = new Point(29, 20);
             label1.Name = "label1";
-            label1.Size = new Size(38, 15);
+            label1.Size = new Size(40, 15);
             label1.TabIndex = 1;
-            label1.Text = "label1";
+            label1.Text = "Nome";
             // 
-            // TelaAdicionarReceita
+            // button1
+            // 
+            button1.Location = new Point(517, 190);
+            button1.Name = "button1";
+            button1.Size = new Size(116, 31);
+            button1.TabIndex = 2;
+            button1.Text = "Adicionar receita";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // Receita
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(649, 234);
+            Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(textBox1);
-            Name = "TelaAdicionarReceita";
+            Name = "Receita";
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
@@ -65,5 +76,6 @@
 
         private TextBox textBox1;
         private Label label1;
+        private Button button1;
     }
 }

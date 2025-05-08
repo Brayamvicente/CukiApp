@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CukiApp.View
 {
-    public partial class Form1: Form
+    public partial class EntradaMercadoria: Form
     {
-        public Form1()
+        public EntradaMercadoria()
         {
             InitializeComponent();
         }

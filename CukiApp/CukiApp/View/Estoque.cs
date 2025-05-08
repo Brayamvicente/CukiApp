@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace CukiApp.View
 {
-    public partial class Form1: Form
+    public partial class Estoque : Form
     {
-        public Form1()
+        public Estoque()
         {
             InitializeComponent();
         }
+
+
+        private void entMerc_Click(object sender, EventArgs e)
+        {
+            EntradaMercadoria novoForm = new EntradaMercadoria();
+            novoForm.Show();
+        }
+
     }
 }

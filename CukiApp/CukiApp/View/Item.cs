@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CukiApp.View
 {
-    public partial class TelaAdicionarItem: Form
+    public partial class Item: Form
     {
-        public TelaAdicionarItem()
+        public Item()
         {
             InitializeComponent();
         }

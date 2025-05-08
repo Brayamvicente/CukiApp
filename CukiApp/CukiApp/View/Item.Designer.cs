@@ -1,6 +1,6 @@
 ﻿namespace CukiApp.View
 {
-    partial class TelaAdicionarItem
+    partial class Item
     {
         /// <summary>
         /// Required designer variable.
@@ -34,6 +34,9 @@
             label2 = new Label();
             label3 = new Label();
             textBox2 = new TextBox();
+            button1 = new Button();
+            label4 = new Label();
+            comboBox2 = new ComboBox();
             SuspendLayout();
             // 
             // textBox1
@@ -85,18 +88,47 @@
             textBox2.Size = new Size(100, 23);
             textBox2.TabIndex = 5;
             // 
-            // TelaAdicionarItem
+            // button1
+            // 
+            button1.Location = new Point(341, 104);
+            button1.Name = "button1";
+            button1.Size = new Size(100, 27);
+            button1.TabIndex = 6;
+            button1.Text = "Adicionar item";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(12, 110);
+            label4.Name = "label4";
+            label4.Size = new Size(57, 15);
+            label4.TabIndex = 7;
+            label4.Text = "Tipo item";
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(128, 107);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(121, 23);
+            comboBox2.TabIndex = 8;
+            // 
+            // Item
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(450, 106);
+            ClientSize = new Size(467, 140);
+            Controls.Add(comboBox2);
+            Controls.Add(label4);
+            Controls.Add(button1);
             Controls.Add(textBox2);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(comboBox1);
             Controls.Add(label1);
             Controls.Add(textBox1);
-            Name = "TelaAdicionarItem";
+            Name = "Item";
             Text = "Adicionar Item";
             ResumeLayout(false);
             PerformLayout();
@@ -110,5 +142,8 @@
         private Label label2;
         private Label label3;
         private TextBox textBox2;
+        private Button button1;
+        private Label label4;
+        private ComboBox comboBox2;
     }
 }
