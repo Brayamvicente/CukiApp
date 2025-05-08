@@ -34,38 +34,32 @@ namespace CukiApp
         {
             button1 = new Button();
             button2 = new Button();
-            comboBox1 = new ComboBox();
             label1 = new Label();
             button3 = new Button();
-            richTextBox1 = new RichTextBox();
+            BtnEstoque = new Button();
+            textBox1 = new TextBox();
+            button6 = new Button();
+            button4 = new Button();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(12, 239);
+            button1.Location = new Point(12, 321);
             button1.Name = "button1";
-            button1.Size = new Size(118, 32);
+            button1.Size = new Size(95, 32);
             button1.TabIndex = 0;
-            button1.Text = "Adicionar Receita";
+            button1.Text = "Receita";
             button1.UseVisualStyleBackColor = true;
             button1.Click += buttonAddItem_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(136, 239);
+            button2.Location = new Point(113, 320);
             button2.Name = "button2";
-            button2.Size = new Size(120, 32);
+            button2.Size = new Size(93, 33);
             button2.TabIndex = 1;
-            button2.Text = "Adicionar item";
+            button2.Text = "Item";
             button2.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(63, 12);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(395, 23);
-            comboBox1.TabIndex = 2;
             // 
             // label1
             // 
@@ -78,31 +72,59 @@ namespace CukiApp
             // 
             // button3
             // 
-            button3.Location = new Point(420, 239);
+            button3.Location = new Point(663, 320);
             button3.Name = "button3";
             button3.Size = new Size(102, 32);
             button3.TabIndex = 4;
             button3.Text = "Efetivar Receita";
             button3.UseVisualStyleBackColor = true;
             // 
-            // richTextBox1
+            // button5
             // 
-            richTextBox1.Location = new Point(12, 55);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(159, 115);
-            richTextBox1.TabIndex = 5;
-            richTextBox1.Text = "";
-            richTextBox1.TextChanged += richTextBox1_TextChanged;
+            BtnEstoque.Location = new Point(212, 320);
+            BtnEstoque.Name = "button5";
+            BtnEstoque.Size = new Size(96, 33);
+            BtnEstoque.TabIndex = 6;
+            BtnEstoque.Text = "Estoque";
+            BtnEstoque.UseVisualStyleBackColor = true;
+            BtnEstoque.Click += button5_Click;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(73, 12);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(462, 23);
+            textBox1.TabIndex = 7;
+            // 
+            // button6
+            // 
+            button6.Location = new Point(541, 11);
+            button6.Name = "button6";
+            button6.Size = new Size(75, 24);
+            button6.TabIndex = 8;
+            button6.Text = "Buscar";
+            button6.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(314, 320);
+            button4.Name = "button4";
+            button4.Size = new Size(90, 33);
+            button4.TabIndex = 9;
+            button4.Text = "Venda";
+            button4.UseVisualStyleBackColor = true;
             // 
             // TelaInicial
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(534, 283);
-            Controls.Add(richTextBox1);
+            ClientSize = new Size(777, 364);
+            Controls.Add(button4);
+            Controls.Add(button6);
+            Controls.Add(textBox1);
+            Controls.Add(BtnEstoque);
             Controls.Add(button3);
             Controls.Add(label1);
-            Controls.Add(comboBox1);
             Controls.Add(button2);
             Controls.Add(button1);
             Name = "TelaInicial";
@@ -111,27 +133,17 @@ namespace CukiApp
             PerformLayout();
         }
 
-        private void buttonAddReceita_Click(object sender, EventArgs e)
-        {
-            TelaAdicionarReceita novoForm = new TelaAdicionarReceita();
-            novoForm.Show();
-        }
-        
-        private void buttonAddItem_Click(object sender, EventArgs e)
-        {
-            TelaAdicionarItem novoForm = new TelaAdicionarItem();
-            novoForm.Show();
-        }
-
 
 
         #endregion
 
         private Button button1;
         private Button button2;
-        private ComboBox comboBox1;
         private Label label1;
         private Button button3;
-        private RichTextBox richTextBox1;
+        private Button BtnEstoque;
+        private TextBox textBox1;
+        private Button button6;
+        private Button button4;
     }
 }
